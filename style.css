@@ -1,0 +1,52 @@
+.logo img {
+    height: 180px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    font-weight: bold;
+    margin: 80px; 
+    text-align: center;
+    color: white;
+    
+}
+
+@font-face {
+    font-family:tibiazao;
+    src: url(KGPrimaryItalics.ttf) format()
+    ('opentype'), url('KGPrimaryItalics.ttf')
+    format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+h2 {
+    font-family: tibiazao;
+    margin: 0 auto;
+    width: 50%;
+    color: rgb(236, 243, 236);  
+    text-align: left;
+    background-color: #031406;
+}
+
+/* ESSE É O CÓDIGO DO GRADIENTE >>  background-image: linear-gradient(to right, black , rgb(3, 3, 71), rgb(4, 4, 31));  */
+
+
+body {
+    height: 100vh;
+    background-image: url(imagens/Client_Artwork_9.1.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.linkHunt {
+    cursor: pointer;
+    text-align: center;   
+}
+
+
+
+
+

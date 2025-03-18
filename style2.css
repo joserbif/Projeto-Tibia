@@ -1,0 +1,116 @@
+
+/* configuração padrão da página, logo +background image e título  */
+
+body {
+    height: 100vh;
+    background-image: url(imagens/Client_Artwork_9.1.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo img {
+    height: 180px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+h1 {
+    color: white;
+    margin: 80px;
+    text-align: center;
+}
+
+/* Aqui começa a centralização de inputs e labels */
+
+.mobHunt {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center; 
+    color: black;
+}
+
+.data1 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center; 
+
+
+}
+
+.containerLoot {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+     height: 10vh;
+
+}
+
+.manaP {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+       text-align: center; /* Centraliza o texto dentro das divs */
+ 
+}
+
+.inputManaPotions,
+.inputQuantidadeManaPotions {
+    display: flex;
+    flex-direction: row; /* Empilha os elementos dentro de cada div */
+    align-items: center; /* Centraliza os elementos internamente */
+}
+
+
+
+label {
+    color: rgb(250, 250, 250);
+    text-align: center;
+    width: 50%;
+}
+
+span {
+    color: white;
+}
+
+P {
+    color: white;
+}
+
+
+.modal {
+    display: none; /* Oculto por padrão */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: rgb(38, 10, 102);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    color: rgb(241, 238, 238);
+}
+
+.close {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
