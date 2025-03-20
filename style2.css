@@ -10,20 +10,48 @@ body {
 }
 
 .logo img {
-    height: 180px;
+    height: 200px;
     position: absolute;
-    top: 0;
+    top: 50px;
     left: 0;
 }
 
-
-h1 {
-    color: white;
-    margin: 80px;
-    text-align: center;
+/* HEADER VERMELHO */
+.header {
+    background: url(/imagens/cacheinfo_background.gif) repeat-x;
+    height: 50px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 50px
+    
+   
 }
 
-/* Aqui começa a centralização de inputs e labels */
+.header-content {
+    height:  90%;
+    display: flex;
+    gap: 18px; 
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+.mainContentbg {
+    background-color: rgb(243, 222, 198);
+    border: 6px solid rgb(212, 179, 142);
+    width: 50%; 
+    padding: 20px; 
+    border-radius: 4px;     
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    max-width: 900px; 
+    margin: 0 auto; 
+
+}
 
 .mobHunt {
     display: flex;
@@ -38,39 +66,39 @@ h1 {
     flex-direction: column; 
     align-items: center;
     text-align: center; 
-
-
 }
 
 .containerLoot {
     display: flex;
-    flex-direction: row;
-    align-items: center; 
-    justify-content: center; 
+    flex-direction: column; 
+    align-items: center;
     text-align: center; 
-     height: 10vh;
+    padding: 25px;
+    color: black;
 
 }
 
 .manaP {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Alinha verticalmente */
-       text-align: center; /* Centraliza o texto dentro das divs */
+    flex-direction: column; 
+    align-items: center;
+    text-align: center; 
+    padding: 25px;
+    color: black;
  
 }
 
 .inputManaPotions,
 .inputQuantidadeManaPotions {
     display: flex;
-    flex-direction: row; /* Empilha os elementos dentro de cada div */
-    align-items: center; /* Centraliza os elementos internamente */
+    flex-direction: row; 
+    align-items: center; 
 }
 
 
 
 label {
-    color: rgb(250, 250, 250);
+    color: rgb(12, 1, 1);
     text-align: center;
     width: 50%;
 }
@@ -83,9 +111,18 @@ P {
     color: white;
 }
 
+.msgArea {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center; 
+    
+    color: black;
+}
+
 
 .modal {
-    display: none; /* Oculto por padrão */
+    display: none; 
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -93,7 +130,6 @@ P {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
     justify-content: center;
     align-items: center;
 }

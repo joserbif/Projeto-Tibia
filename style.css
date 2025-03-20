@@ -1,37 +1,29 @@
 .logo img {
-    height: 180px;
+    height: 200px;
     position: absolute;
-    top: 0;
+    top: 50px;
     left: 0;
 }
 
-h1 {
-    font-weight: bold;
-    margin: 80px; 
-    text-align: center;
-    color: white;
+.header {
+    background: url(/imagens/cacheinfo_background.gif) repeat-x;
+    height: 50px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 50px
     
+   
 }
 
-@font-face {
-    font-family:tibiazao;
-    src: url(KGPrimaryItalics.ttf) format()
-    ('opentype'), url('KGPrimaryItalics.ttf')
-    format('truetype');
-    font-weight: normal;
-    font-style: normal;
+.header-content {
+    height:  90%;
+    display: flex;
+    gap: 18px; 
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
 }
-h2 {
-    font-family: tibiazao;
-    margin: 0 auto;
-    width: 50%;
-    color: rgb(236, 243, 236);  
-    text-align: left;
-    background-color: #031406;
-}
-
-/* ESSE É O CÓDIGO DO GRADIENTE >>  background-image: linear-gradient(to right, black , rgb(3, 3, 71), rgb(4, 4, 31));  */
-
 
 body {
     height: 100vh;

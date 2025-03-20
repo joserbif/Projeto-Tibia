@@ -88,7 +88,8 @@ window.onclick = function(event) {
     }
 }
 
-document.querySelector("input[type='submit']").addEventListener("click", function(event) {
-    
-    calcularSaldo();
+document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+    calcularSaldo();  
 });
+

@@ -5,113 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hunt</title>
     <link rel="stylesheet"  href="style2.css">
+    <link rel="icon" href="/imagens/tibia-icon.png"
 </head>
 <body>
     <div class= "logo">
-        <a href="index.html"><button><img src="/imagens/logo.png"></button></a>
+        <a href="index.html">
+        <img src="/imagens/logo.png"></button>
+        </a>
     </div>
 
-    <h1>Registro Hunt</h1>
 
-    <form>
-
-            
-        <div class="mobHunt">
-            <label for="mob">Mob da Hunt</label>
-            <input type="text" id="Mob" name="Mob" required> <br>
+    <header class="header">
+        <div class="header-content">
+            <span>Registro de Hunt</span>
         </div>
-        
-        <div class="data1">
-            <label for ="Data">Data</label>
-            <input type="datetime-local" id="Data">
-        </div>    
-
-        
-        <div class="containerLoot">
-        <label for ="loot">Valor do Loot</label>
-        <input type="number" id="loot" min="1" value="1"> 
-        
-        
-        </div>
-        
-        <br>
-
-        <div class="manaP">
-            <div class="inputManaPotions">
-                <label for="manaPotions">Quais Mana Potions você utilizou</label>
-                <select id="manaPotions">
-
-                    <option id="manaPotions1" value="56">Mana Potion</option>
-                    <option id="strongManaPotions1" value="108">Strong Mana Potion</option>
-                    <option id="greatManaPotions1" value="158">Great Mana Potion</option>
-                    <option id="ultManaPotions1" value="438">Ultimate Mana Potion</option>
-        
-                </select> 
-            </div>
-
-            <div class="inputQuantidadeManaPotions">
-                <label for="quantidadeManaP"></label>        
-                <input type="number" id="quantidadeManaP" min="1" value="1">
-                <p class="result"><span id="calcularTotalManaPotions"style="display: none;"> K</span></p> 
-            </div>    
-        </div>
-
-
-        <label for="healthPotions">Quais Health Potions você utilizou</label>
-        <select id="healthPotions">
-
-            <option id="healthPotions1" value="50">Health Potion</option>
-            <option id="strongHealthPotions1" value="115">Strong Health Potion</option>
-            <option id="greatHealthPotions1" value="225">Great Health Potion</option>
-            <option id="ultHealthPotions1" value="379">Ultimate Health Potion</option>
-  
-        
-        </select> 
-        
-        <label for="quantidadeHealthP"></label>        
-        <input type="number" id="quantidadeHealthP" min="1" value="1">  
-        <p class="result1"><span id="calcularTotalHealthPotions" style="display: none;"> K</span> </p>
-
-
-        <label for="runas">Quais Runas você utilizou</label>
-        <select id="runas">
-
-            <option id="avalanche" value="50">Avalanche</option>
-            <option id="gfb" value="64">GFB</option>
-            <option id="sd" value="162">SD</option>
-            <option id="stoneShowerRune" value="41">Stone Shower Rune</option>
-
-
-        </select>
-
-        <label for="quantidadeRunas"></label>        
-        <input type="number" id="quantidadeRunas" min="1" value="1">  
-        <p class="result2"><span id="calcularRunas" style="display: none;"> K</span> </p> 
-
-
-        <div>
-            <label for="msg1">Observações Hunt</label> <br>
-            <textarea name="msg" id="msg1" cols="30" rows="10"></textarea>
-        </div>
-
-        <div class="enviarLimpar">
-            <input type="submit" value="Calcular">
-            <input type="reset" value="Limpar">
-        </div>
-
-        <div id="resultadoModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2>Resultado da Hunt</h2>
-                <p id="resultadoTexto"></p>
-            </div>
-        </div>
-
-        
-    </form>  
+    </header>
     
-    <script src="script1.js" ></script>
+    <main>
+        <div class="mainContentbg">
+            <form>
         
+                <div class="mobHunt">
+                    <label for="mob">Mob da Hunt</label>
+                    <input type="text" id="Mob" name="Mob" required> <br>
+                </div>
+                
+                <div class="data1">
+                    <label for ="Data">Data</label>
+                    <input type="datetime-local" id="Data">
+                </div>    
+                
+                <div class="containerLoot">
+                <label for ="loot">Valor do Loot</label>
+                <input type="number" id="loot" min="1" value="1" required> 
+                </div>
+                
+                <br>
+
+                <div class="manaP">
+                    <div class="inputManaPotions">
+                        <label for="manaPotions">Quais Mana Potions você utilizou</label>
+                        <select id="manaPotions">
+
+                            <option id="manaPotions1" value="56">Mana Potion</option>
+                            <option id="strongManaPotions1" value="108">Strong Mana Potion</option>
+                            <option id="greatManaPotions1" value="158">Great Mana Potion</option>
+                            <option id="ultManaPotions1" value="438">Ultimate Mana Potion</option>
+                
+                        </select> 
+                    </div>
+
+                    <div class="inputQuantidadeManaPotions">
+                        <label for="quantidadeManaP"></label>        
+                        <input type="number" id="quantidadeManaP" min="1" value="1" required>
+                        <p class="result"><span id="calcularTotalManaPotions"style="display: none;"> K</span></p> 
+                    </div>    
+                </div>
+
+
+                <label for="healthPotions">Quais Health Potions você utilizou</label>
+                <select id="healthPotions">
+
+                    <option id="healthPotions1" value="50">Health Potion</option>
+                    <option id="strongHealthPotions1" value="115">Strong Health Potion</option>
+                    <option id="greatHealthPotions1" value="225">Great Health Potion</option>
+                    <option id="ultHealthPotions1" value="379">Ultimate Health Potion</option>
+        
+                
+                </select> 
+                
+                <label for="quantidadeHealthP"></label>        
+                <input type="number" id="quantidadeHealthP" min="1" value="1" required>  
+                <p class="result1"><span id="calcularTotalHealthPotions" style="display: none;"> K</span> </p>
+
+
+                <label for="runas">Quais Runas você utilizou</label>
+                <select id="runas">
+
+                    <option id="avalanche" value="50">Avalanche</option>
+                    <option id="gfb" value="64">GFB</option>
+                    <option id="sd" value="162">SD</option>
+                    <option id="stoneShowerRune" value="41">Stone Shower Rune</option>
+
+
+                </select>
+
+                <label for="quantidadeRunas"></label>        
+                <input type="number" id="quantidadeRunas" min="1" value="1" required>  
+                <p class="result2"><span id="calcularRunas" style="display: none;"> K</span> </p> 
+
+
+                <div class="msgArea">
+                    <label for="msg1">Observações Hunt</label> <br>
+                    <textarea name="msg" id="msg1" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="enviarLimpar">
+                    <input type="submit" value="Calcular" required>
+                    <input type="reset" value="Limpar">
+                </div>
+
+                <div id="resultadoModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Resultado da Hunt</h2>
+                        <p id="resultadoTexto"></p>
+                    </div>
+                </div>
+
+            </form>  
+            
+            <script src="script1.js" ></script>
+        </div>
+    </main>
 
     
 </body>
